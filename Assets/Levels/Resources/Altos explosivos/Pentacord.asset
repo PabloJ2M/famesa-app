@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269a49cd4ea5a58429bda81cab46fb80, type: 3}
+  m_Name: Pentacord
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: e296c93ef74e02646b5c124acb4df6f8, type: 3}
+  _name: Pentacord
+  _category: Altos Explosivos
+  _subCategory: Cebos o iniciadores
+  _fichaTecnica:
+  - {fileID: 21300000, guid: c33d5d4c6fe52f449ba1eb292b31ca6a, type: 3}
+  - {fileID: 21300000, guid: 44fbe067e110b4c4e97ead84e9b60337, type: 3}
+  _fichaSeguridad: []
+  _video: {fileID: 32900000, guid: dae2df36b75d5a54785bacc3395f296f, type: 3}

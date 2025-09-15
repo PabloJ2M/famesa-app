@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269a49cd4ea5a58429bda81cab46fb80, type: 3}
+  m_Name: Dinamita Pulverulenta
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: 2947c9cbd592af048be17885a3d155a0, type: 3}
+  _name: Dinamita Pulverulenta
+  _category: Altos Explosivos
+  _subCategory: Encartuchados
+  _fichaTecnica:
+  - {fileID: 21300000, guid: e04b7bc3af036a249a4e653b182e8c85, type: 3}
+  - {fileID: 21300000, guid: 3168f51d8d6f2784a8b1db9c190c2d2f, type: 3}
+  _fichaSeguridad: []
+  _video: {fileID: 32900000, guid: dae2df36b75d5a54785bacc3395f296f, type: 3}

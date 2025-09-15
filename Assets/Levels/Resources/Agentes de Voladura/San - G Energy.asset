@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269a49cd4ea5a58429bda81cab46fb80, type: 3}
+  m_Name: San - G Energy
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: cde587e32fed71c459c2e2db6da123aa, type: 3}
+  _name: San - G Energy
+  _category: Agentes de voladura
+  _subCategory: "Emulsi\xF3n gasificable"
+  _fichaTecnica:
+  - {fileID: 21300000, guid: 5c0934e31a47acb4ab15fe9aa1891abb, type: 3}
+  - {fileID: 21300000, guid: c5c479eed644fa7488c69d3b551b595f, type: 3}
+  _fichaSeguridad: []
+  _video: {fileID: 32900000, guid: dae2df36b75d5a54785bacc3395f296f, type: 3}

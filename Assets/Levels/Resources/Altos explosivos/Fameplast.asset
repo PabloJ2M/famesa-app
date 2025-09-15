@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269a49cd4ea5a58429bda81cab46fb80, type: 3}
+  m_Name: Fameplast
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: 485da2bbc9819cc4eb41ca226c6a2d68, type: 3}
+  _name: Famecorte S
+  _category: Altos Explosivos
+  _subCategory: "Emulsi\xF3n sensibilizada"
+  _fichaTecnica:
+  - {fileID: 21300000, guid: 22727db86fe3a1f4dbd660d856664adf, type: 3}
+  - {fileID: 21300000, guid: 1620b6bd7a059cc4abbbd01edd8fd4e6, type: 3}
+  _fichaSeguridad: []
+  _video: {fileID: 32900000, guid: dae2df36b75d5a54785bacc3395f296f, type: 3}
