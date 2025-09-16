@@ -6,6 +6,8 @@ public class CategoryBuilder : MonoBehaviour
 {
     [SerializeField] private SO_ProductList _list;
     [SerializeField] private ToggleGroup _group;
+
+    [SerializeField] private Transform _parent;
     [SerializeField] private CategoryElement _prefab;
 
     [Header("Constructor")]
@@ -20,6 +22,10 @@ public class CategoryBuilder : MonoBehaviour
         var subCategories = products.GetSubCategories();
 
         foreach (var subCategory in subCategories)
-            Instantiate(_prefab, transform).SetupElements(products, subCategory, _group);
+            Instantiate(_prefab, _parent).SetupElements(products, subCategory, _group);
+    }
+    private void Reset()
+    {
+        _parent = transform;
     }
 }

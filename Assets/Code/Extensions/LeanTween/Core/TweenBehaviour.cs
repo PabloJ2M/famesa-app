@@ -35,7 +35,11 @@ namespace UnityEngine.Animations
         }
 
         protected abstract void OnUpdate(T value);
-        protected virtual void OnComplete() => _tweenID = -1;
+        protected virtual void OnComplete()
+        {
+            _tweenID = -1;
+            _tweenCore.Complete();
+        }
         protected virtual void CancelTween()
         {
             if (_tweenID < 0) return;

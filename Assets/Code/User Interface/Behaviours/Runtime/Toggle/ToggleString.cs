@@ -10,8 +10,13 @@ namespace UnityEngine.UI
 
         private string _defaultText;
 
-        protected override void Awake() { base.Awake(); _defaultText = _textUI?.text; }
+        protected override void Awake() { base.Awake(); SetText(_textUI.text); }
         protected override void Start() { base.Start(); UpdateText(isOn); }
+
+#if UNITY_EDITOR
+        protected override void Reset() { base.Reset(); _textUI = GetComponent<TextMeshProUGUI>(); }
+#endif
+
         protected override void OnUpdateValue(bool value) { if (Application.isPlaying) UpdateText(value); }
 
         protected void UpdateText(bool value) => _textUI?.SetText(string.Format(_defaultText, value ? _textOn : _textOff));

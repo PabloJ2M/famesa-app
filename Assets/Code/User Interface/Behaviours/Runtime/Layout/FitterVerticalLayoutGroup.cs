@@ -1,25 +1,29 @@
+using System.Threading.Tasks;
+using UnityEngine.Animations;
+
 namespace UnityEngine.UI
 {
-    [ExecuteAlways]
-    public class FitterVerticalLayoutGroup : VerticalLayoutGroup
+    public class FitterVerticalLayoutGroup : MonoBehaviour
     {
-        [SerializeField] private float referenceAspect = 1f;
+        [SerializeField] private TweenPreferredSize _preferredSize;
+        [SerializeField] private VerticalLayoutGroup _layout;
+        private RectTransform _transform;
 
-        //public override void SetLayoutVertical()
-        //{
-        //    // Primero ajusto las alturas de los hijos
-        //    for (int i = 0; i < rectChildren.Count; i++)
-        //    {
-        //        RectTransform child = rectChildren[i];
+        private void Awake() => _transform = transform as RectTransform;
+        private void Reset() => _layout = GetComponent<VerticalLayoutGroup>();
 
-        //        float width = child.rect.width;
-        //        float height = width / referenceAspect;
+        private async void OnTransformChildrenChanged()
+        {
+            float height = 0;
+            _layout.enabled = true;
+            await Task.Yield();
 
-        //        SetChildAlongAxis(child, 1, child.anchoredPosition.y, height);
-        //    }
+            for (int i = 0; i < _transform.childCount; i++)
+                height += _transform.GetChild(i).GetComponent<RectTransform>().rect.height;
 
-        //    // Luego dejo que el VerticalLayoutGroup haga su trabajo de ordenar
-        //    base.SetLayoutVertical();
-        //}
+            await Task.Yield();
+            _layout.enabled = false;
+            _preferredSize.ReplacePreferredHeight = height;
+        }
     }
 }

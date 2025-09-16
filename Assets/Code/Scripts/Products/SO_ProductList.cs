@@ -6,11 +6,18 @@ public class SO_ProductList : ScriptableObject
 {
     [SerializeField] private SO_Product[] _products;
 
-    public SO_Product[] Products => _products;
+    public SO_Product[] Products => _products
+        .Where(x => x.Image != null)
+        .Where(x => x.FichaTecnica.Length != 0)
+        .ToArray();
 
-    public SO_Product[] GetProductsByCategory(string category, string subCategory) => _products
-        .Where(x => category == x.Category)
-        .Where(x => subCategory == x.SubCategory)
+    public SO_Product[] GetProductsByName(string name) => Products
+        .Where(x => x.Name.ToLower().Contains(name.ToLower()))
+        .ToArray();
+
+    public string[] GetProductsName(string name) => Products
+        .Where(x => x.Name.ToLower().Contains(name.ToLower()))
+        .Select(x => x.Name)
         .ToArray();
 
     [ContextMenu("Get All Items")]

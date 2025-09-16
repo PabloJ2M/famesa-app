@@ -10,6 +10,7 @@ public class CategoryElement : MonoBehaviour
     {
         _products.Products = products.GetProductBySubCategory(subCategory);
 
+        if (!_toggle) return;
         _toggle.SetText(subCategory);
         _toggle.group = group;
     }

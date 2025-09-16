@@ -18,6 +18,7 @@ namespace UnityEngine.Animations
 
         public event Action<bool> onPlayStatusChanged;
         public event Action onResetStatus;
+        public event Action onCompleteAnimation;
 
         public float Time => _time;
         public float Delay => _delay;
@@ -37,16 +38,17 @@ namespace UnityEngine.Animations
         }
         public void Play(bool value)
         {
-            onPlayStatusChanged?.Invoke(value);
             IsEnabled = value;
+            onPlayStatusChanged?.Invoke(value);
         }
+        public void Complete() => onCompleteAnimation?.Invoke();
 
         [ContextMenu("Swap Animation")] public void SwapTweenAnimation() => Play(!IsEnabled);
         [ContextMenu("Reset Animation")] public void ResetTweenAnimation()
         {
             onResetStatus?.Invoke();
             IsEnabled = false;
-            Play(true);
+            if (_playOnAwake) Play(true);
         }
     }
 }

@@ -254,6 +254,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5744545556918878995, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5944205737709960520, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_ShowMaskGraphic
       value: 1

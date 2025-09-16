@@ -7,5 +7,6 @@ namespace UnityEngine.Animations
         [ContextMenu("SwipeIn")] public void SwipeIn() => _tweenCore?.Play(true);
         [ContextMenu("SwipeOut")] public void SwipeOut() => _tweenCore?.Play(false);
         [ContextMenu("Swap Animation")] public void SwapAnimation() => _tweenCore?.SwapTweenAnimation();
+        [ContextMenu("Reset Animation")] public void ResetAnimation() => _tweenCore.ResetTweenAnimation();
     }
 }

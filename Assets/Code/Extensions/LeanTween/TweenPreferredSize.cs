@@ -10,6 +10,9 @@ namespace UnityEngine.Animations
 
         protected LayoutElement _layout;
 
+        public float ReplacePreferredWidth { set => _to.x = value; }
+        public float ReplacePreferredHeight { set => _to.y = value; }
+
         protected override void Awake()
         {
             base.Awake();
