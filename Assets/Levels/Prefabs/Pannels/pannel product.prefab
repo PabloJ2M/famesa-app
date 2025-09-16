@@ -224,27 +224,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -256,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5744545556918878995, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5944205737709960520, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_ShowMaskGraphic
@@ -265,10 +257,38 @@ PrefabInstance:
     - target: {fileID: 6427633433059870293, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 32cecc1c4be5e7d4897ece01fc74112a, type: 3}
+      objectReference: {fileID: 21300000, guid: 27e1128adc1f4be4f9c057907616865d, type: 3}
     - target: {fileID: 6427633433059870293, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8242346701459587222, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_Name
@@ -358,7 +378,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5744545556918878995, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9193946271248368582, guid: ef14ec401798df040a38472981a7ca8b, type: 3}

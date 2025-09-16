@@ -35,7 +35,11 @@ namespace UnityEngine.Pool
             _field.onValueChanged.RemoveListener(OnValueChange);
         }
 
-        private void OnSelectInput(string text) => _searchList.gameObject.SetActive(true);
+        private void OnSelectInput(string text)
+        {
+            _searchList.gameObject.SetActive(true);
+            _searchList.OnUpdateInputField(_searchList.WrittenText);
+        }
         private void OnValueChange(string text)
         {
             OnSelectInput(text);

@@ -10,7 +10,7 @@ namespace UnityEngine.Pool
         protected override Transform _parent => _scroll.content;
         private ScrollRect _scroll;
 
-        public string WrittenText { get; private set; }
+        public string WrittenText { get; private set; } = string.Empty;
 
         protected override void Awake() { base.Awake(); _scroll = GetComponent<ScrollRect>(); }
 

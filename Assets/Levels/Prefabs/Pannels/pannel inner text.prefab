@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288256409
+  m_fontColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -210,8 +210,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288256409
+  m_fontColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -290,6 +290,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438183923240010581, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744545556918878995, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AspectRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718025348322914913, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8242346701459587222, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
@@ -389,35 +425,72 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8242346701459587222, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7545010149213918915}
-    - targetCorrespondingSourceObject: {fileID: 1654252349425954236, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 472529815928376225, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4508506521990649413}
+      addedObject: {fileID: 4727186223394719390}
+    - targetCorrespondingSourceObject: {fileID: 472529815928376225, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3144538554370000642}
+    - targetCorrespondingSourceObject: {fileID: 472529815928376225, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2337402115973560531}
   m_SourcePrefab: {fileID: 100100000, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
---- !u!1 &585216185181264566 stripped
+--- !u!1 &1757756148395244715 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1654252349425954236, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 472529815928376225, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
   m_PrefabInstance: {fileID: 2227609159240152842}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4508506521990649413
+--- !u!222 &4727186223394719390
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757756148395244715}
+  m_CullTransparentMesh: 1
+--- !u!114 &3144538554370000642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585216185181264566}
+  m_GameObject: {fileID: 1757756148395244715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5177388603050735206, guid: c6f0b0d5c72cd8b46b6fbc351809b8d6, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 0.5
+--- !u!114 &2337402115973560531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757756148395244715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!224 &7024907154282984652 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9193946271248368582, guid: ef14ec401798df040a38472981a7ca8b, type: 3}
@@ -446,7 +519,7 @@ MonoBehaviour:
     m_Top: 50
     m_Bottom: 50
   m_ChildAlignment: 7
-  m_Spacing: 50
+  m_Spacing: 35
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
