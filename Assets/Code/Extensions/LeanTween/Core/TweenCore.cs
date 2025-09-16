@@ -44,11 +44,17 @@ namespace UnityEngine.Animations
         public void Complete() => onCompleteAnimation?.Invoke();
 
         [ContextMenu("Swap Animation")] public void SwapTweenAnimation() => Play(!IsEnabled);
-        [ContextMenu("Reset Animation")] public void ResetTweenAnimation()
+        [ContextMenu("Restart Animation")] public void RestartTweenAnimation()
         {
             onResetStatus?.Invoke();
             IsEnabled = false;
             if (_playOnAwake) Play(true);
+        }
+        [ContextMenu("Reset Animation")] public void ResetTweenAnimation()
+        {
+            onResetStatus?.Invoke();
+            IsEnabled = false;
+            Play(true);
         }
     }
 }
